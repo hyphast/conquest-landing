@@ -1,0 +1,107 @@
+@use './variables' as *;
+@use './normalize';
+
+.app-container {
+  width: calc(100vw - 80px);
+  margin: 0 auto;
+  max-width: 1120px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 85px;
+
+  &__menu {
+    ul {
+      display: flex;
+      justify-content: space-between;
+      cursor: pointer;
+
+      li {
+        + li {
+          margin-left: 65px;
+        }
+      }
+    }
+  }
+  &__actions {
+    ul {
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+
+      li + li {
+        margin-left: 23px;
+      }
+    }
+  }
+}
+
+@mixin collection-title {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400;
+  color: $black;
+}
+
+.main-collection {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+
+  &__info {
+    position: relative;
+    top: 230px;
+    left: 70px;
+  }
+
+  &__title {
+    @include collection-title;
+    font-size: 45px;
+    line-height: 60px;
+    width: 350px;
+    position: relative;
+
+    &::before {
+      content: '';
+      display: block;
+      border: 1px solid #8b8371;
+      width: 50px;
+      position: absolute;
+      left: -70px;
+      top: 35px;
+    }
+  }
+
+  &__subtitle {
+    @include collection-title;
+    font-size: 30px;
+    line-height: 40px;
+    width: fit-content;
+
+    margin-bottom: 40px;
+  }
+
+  &__desc {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 21px;
+    color: rgba(27, 26, 23, 0.82);
+
+    margin-bottom: 50px;
+  }
+
+  &__order {
+    cursor: pointer;
+    padding: 26px 38px;
+    background: $second-gray;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+}
