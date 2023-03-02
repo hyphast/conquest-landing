@@ -59,44 +59,144 @@
 
         <section class="popular-watch">
           <h2 class="popular-watch__title">Популярные модели</h2>
-          <button class="popular-watch___more">Смотреть все</button>
+          <div class="popular-watch___more">
+            <button>Смотреть все</button>
+          </div>
           <div class="popular-watch__collection">
-            <div class="popular-watch__item watch-item">
-              <h3 class="watch-item__title">RADO</h3>
-              <span class="watch-item__price">65 300 ₽</span>
+            <div class="popular-watch__item">
+              <h3 class="popular-watch__item-title">RADO</h3>
+              <span class="popular-watch__item-price">65 300 ₽</span>
               <img
-                class="watch-item__photo"
-                src="/public/rado.svg"
+                class="popular-watch__item-photo"
+                src="/public/watch_1.png"
                 alt="watch item"
               />
-              <button class="watch-item__button">Подробнее</button>
+              <button class="popular-watch__item-button">Подробнее</button>
             </div>
 
-            <div class="popular-watch__item watch-item">
-              <h3 class="watch-item__title">BVLGARI</h3>
-              <span class="watch-item__price">81 700 ₽</span>
+            <div class="popular-watch__item">
+              <h3 class="popular-watch__item-title">BVLGARI</h3>
+              <span class="popular-watch__item-price">81 700 ₽</span>
               <img
-                class="watch-item__photo"
-                src="/public/bulgari.svg"
+                class="popular-watch__item-photo"
+                src="/public/watch_2.png"
                 alt="watch item"
               />
-              <button class="watch-item__button">Подробнее</button>
+              <button class="popular-watch__item-button">Подробнее</button>
             </div>
 
-            <div class="popular-watch__item watch-item">
-              <h3 class="watch-item__title">BVLGARI</h3>
-              <span class="watch-item__price">72 700 ₽</span>
+            <div class="popular-watch__item">
+              <h3 class="popular-watch__item-title">BVLGARI</h3>
+              <span class="popular-watch__item-price">72 700 ₽</span>
               <img
-                class="watch-item__photo"
-                src="/public/bulgari2.svg"
+                class="popular-watch__item-photo"
+                src="/public/watch_3.png"
                 alt="watch item"
               />
-              <button class="watch-item__button">Подробнее</button>
+              <button class="popular-watch__item-button">Подробнее</button>
             </div>
           </div>
         </section>
       </main>
     </div>
+
+    <section class="banner">
+      <div class="banner__left">
+        <img
+          class="banner__img"
+          src="/public/watch_banner.jpg"
+          alt="watch banner"
+        />
+        <div class="banner__pagination">
+          <button><img src="/public/arrow_left.svg" alt="arrow left" /></button>
+          <span>01</span>
+          <button>
+            <img src="/public/arrow_right.svg" alt="arrow right" />
+          </button>
+        </div>
+      </div>
+      <div class="banner__right">
+        <h3 class="banner__title">Подлинное качество</h3>
+        <p class="banner__desc">
+          Все часы производятся в Швейцарии и имеют сертификаты качества.
+          Настоящие швейцарские часы — это предмет гордости и престижа.
+        </p>
+        <button class="banner__button">СМОТРЕТЬ КАТАЛОГ</button>
+      </div>
+    </section>
+
+    <section class="about app-container">
+      <div class="about__news">
+        <h2 class="about__news-title">Следите за нашими новостями</h2>
+        <p class="about__news-desc">
+          Подписывайтесь на @conquest_watch в соцсетях и узнавайте о новинках и
+          акциях первыми.
+        </p>
+        <div class="about__news-links">
+          <img src="/public/instagram.svg" alt="instagram" />
+          <img src="/public/facebook.svg" alt="facebook" />
+          <img src="/public/twitter.svg" alt="twitter" />
+        </div>
+      </div>
+      <div class="about__news-photos">
+        <img
+          class="about__news-photo1"
+          src="/public/photo_1.jpg"
+          alt="photo1"
+        />
+        <img
+          class="about__news-photo2"
+          src="/public/photo_2.jpg"
+          alt="photo2"
+        />
+        <img
+          class="about__news-photo3"
+          src="/public/photo_3.jpg "
+          alt="photo3"
+        />
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container app-container">
+        <div class="footer__about">
+          <img
+            class="footer__about-logo"
+            src="/public/logo_white.svg"
+            alt="logo"
+          />
+          <span class="footer__about-phone">8 (499) 450-47-97</span>
+          <span class="footer__about-email">info@conquest.watch.ru</span>
+        </div>
+        <div class="footer__info">
+          <h4>O компании</h4>
+          <ul>
+            <li>Наши магазины</li>
+            <li>Вакансии</li>
+            <li>Сертификаты</li>
+            <li>Отзывы</li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <h4>покупателям</h4>
+          <ul>
+            <li>Каталог товаров</li>
+            <li>Как заказать?</li>
+            <li>FAQ</li>
+            <li>Корпоративным клиентам</li>
+          </ul>
+        </div>
+        <div class="footer__info">
+          <h4>оплата и доставка</h4>
+          <ul>
+            <li>Способы оплаты</li>
+            <li>Время доставки</li>
+            <li>Гарантии и ремонт</li>
+            <li>Возврат и компенсация</li>
+          </ul>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
   </body>
 </html>
