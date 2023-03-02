@@ -257,6 +257,7 @@
 
 .banner {
   display: flex;
+  justify-content: center;
   background: no-repeat right url('/public/lines_banner.png');
   height: 520px;
 
@@ -273,7 +274,8 @@
       background: #f7f5ef;
       content: '';
       display: inline-block;
-      width: 468px;
+      width: 50%;
+      left: 0;
       height: 520px;
       position: absolute;
       z-index: -1;
